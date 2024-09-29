@@ -1,0 +1,64 @@
+/* Styles pour la navbar centrée et horizontale */
+nav {
+    width: 100%;
+    position: absolute;
+    padding: 20px 0;         /* Espacement vertical pour la navbar */
+    display: flex;                 /* Active le Flexbox */
+    justify-content: space-between; /* Espace entre les éléments de gauche et de droite */
+    justify-content: center;
+  }
+
+   
+  nav ul {
+    list-style: none;        /* Enlève les puces de la liste */
+    display: flex;           /* Affiche les items du ul horizontalement */
+    align-items: center;
+    padding: 0;              /* Retire le padding par défaut */
+    margin: 0;               /* Retire la marge par défaut */
+  }
+  nav ul li {
+    display: inline-block;    /* Affiche les items horizontalement */
+    margin: 0 15px;           /* Espace entre chaque élément de la navbar */
+  }
+
+  nav ul li:not(:first-child):not(:last-child) {
+    border-style: solid;
+    border-color: white;
+    border-width: 0.13em;
+    padding: 1px 15px 1px 15px;
+    border-radius: 1500px;
+  }
+
+  nav ul li:hover:not(:first-child):not(:last-child){
+    background-color: white;
+  }
+
+  nav ul li a {
+    color: #f4f4f4;          /* Couleur du texte */
+    text-decoration: none;    /* Enlève la sous-ligne des liens */
+    font-size: 18px;          /* Taille de police des liens */
+    transition: color 0.3s;   /* Transition pour effet de survol */
+  }
+
+  nav ul li:hover a{
+    color: #e17a58; 
+    transition: color 0.3s;
+  }
+
+
+  /* Styles pour le menu burger */
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.burger div {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
