@@ -51,7 +51,7 @@
 /* Animation keyframes pour l'effet de chute et rebond */
 @keyframes fall-and-bounce-one {
     0% {
-        top: -300px; /* Commence hors de l'écran */
+        top: -600px; /* Commence hors de l'écran */
     }
     60% {
         top: 0; /* Arrive à sa position finale */
