@@ -23,7 +23,7 @@ const SectionContainer = ({title, sectionId, bgColor, classNameSection, classNam
             <div className={`container ${classNameContainer}`} style={containerStyle()}>
                 { 
                     title && 
-                        <div className="title"><h1 style={{fontWeight:"normal", marginBottom:"5%", width: "fitContent"}}>{title}</h1></div>
+                        <div className="title" style={{width: "fitContent"}}><h1 style={{fontWeight:"normal", marginBottom:"5%"}}>{title}</h1></div>
                 }
                 {children}
             </div>
