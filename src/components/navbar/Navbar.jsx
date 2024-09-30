@@ -6,17 +6,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
         <ul>
-            <li>
-                <a href="#hero">
-                    <img id = "icon-home" class="img-icon"  src="/assets/icons/home.svg"  alt="Icon maison" />
-                </a>
-            </li>
-            <li><a href="#about">A Propos de moi</a></li>
-            <li><a href="#projects">Réalisations professionnelles</a></li>
-            <li><a href="#projects">Réalisations fictives</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#technologies">My stacks</a></li>
+            <li><a href="#experiences">Experiences</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
-                <a target="_blank" href="https://www.linkedin.com/in/lola-caillaud-9a7999195">
+                <a target="_blank" href="https://www.linkedin.com/in/marvin-prioux-khaye">
                     <img  id = "icon-linkedin" class="img-icon"  src="/assets/icons/linkedin-64.svg"  alt="Icon LinkedIN" />
                 </a>
             </li>

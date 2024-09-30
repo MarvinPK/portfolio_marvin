@@ -4,9 +4,20 @@ import "./hero.css"
 const Hero = () => {
   return (
     <section id="hero" className="hero-section">
-      <h1>Bienvenue sur mon Portfolio</h1>
-      <p>Je suis un développeur passionné par la création de belles applications web.</p>
-      <a href="#projects" className="btn">Voir mes projets</a>
+      <div id="presentation">
+       <div className='bouncy-title'>
+          <p><h1>Hi, I am <b>Marvin</b></h1></p>
+          <p><h1> a <b>fullstack</b> and <b>smiling</b> developpeur.</h1></p>
+       </div> 
+       <div className='bouncy-triangle'>       
+        <div class="triangle-border">
+          <div class="triangle-inner"></div>
+        </div>
+      </div>
+      </div>
+      <div id="picture">
+        <img src="assets/img/me.jpg"/>
+      </div>
     </section>
   );
 };
