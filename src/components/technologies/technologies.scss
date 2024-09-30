@@ -1,0 +1,66 @@
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centre les éléments horizontalement */
+    align-items: center;
+    margin-top: 7%;
+}
+
+.card {
+    color: black;
+    border-bottom: solid 4px #F5BD4C;
+    border-right: solid 4px #F5BD4C;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 1 22%; /* 3 cards per row, with spacing */
+    margin: 30px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.card .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+.card .header .card-title{
+    font-weight: bold;
+}
+
+.card .svgList img{
+    padding: 0px 10px;
+}
+
+.card .level{
+    font-size: 15px;
+}
+
+.card .where{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card .where .whereElement{
+    padding:"5px";
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 1 calc(50% - 20px); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 0 1 100%; /* 1 card per row on extra small screens */
+    }
+}

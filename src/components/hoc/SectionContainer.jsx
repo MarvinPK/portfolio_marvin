@@ -14,7 +14,8 @@ const SectionContainer = ({title, sectionId, bgColor, classNameSection, classNam
 
     const containerStyle = () => {
         return {
-            marginLeft: "10%"
+            marginLeft: "10%",
+            marginRight: "10%"
         }
     }
        
@@ -23,7 +24,12 @@ const SectionContainer = ({title, sectionId, bgColor, classNameSection, classNam
             <div className={`container ${classNameContainer}`} style={containerStyle()}>
                 { 
                     title && 
-                        <div className="title" style={{width: "fitContent"}}><h1 style={{fontWeight:"normal", marginBottom:"5%"}}>{title}</h1></div>
+                        <div className="title" style={{width: "fit-content"}}>
+                            <h1 style={{fontWeight:"normal", marginBottom :"5px"}}
+                            >
+                                {title}
+                            </h1>
+                        </div>
                 }
                 {children}
             </div>

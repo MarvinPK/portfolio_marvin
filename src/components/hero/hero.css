@@ -35,7 +35,7 @@
   
 .bouncy-title-one {
   position: relative;
-  animation: fall-and-bounce-one 1.5s ease-in-out;
+  animation: fall-and-bounce-one 2s ease-in-out;
 }
 
 .bouncy-title-two {
@@ -48,10 +48,10 @@
     0% {
         top: -300px; /* Commence hors de l'écran */
     }
-    40% {
+    60% {
         top: 0; /* Arrive à sa position finale */
     }
-    60% {
+    70% {
         top: -60px; /* Rebond léger vers le haut */
     }
     80% {
