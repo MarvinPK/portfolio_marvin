@@ -1,7 +1,13 @@
-export default function Technologies() {
+import SectionContainer from "../hoc/SectionContainer";
+import "./technologies.scss"
+
+const Technologies = () => {
     return (
-      <section id="technologies" className="technologies-section">
-        <h1> Mes technos</h1>
-      </section>
+      <SectionContainer sectionId="technologies" title="Technologies" bgColor="black">
+        <p>content</p>
+      </SectionContainer>
+
     );
 }
+
+export default Technologies

@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div>
-     <div class="follower" ref={followerRef}></div>
+     <div className="follower" ref={followerRef}></div>
       <Navbar />
       <Hero />
       <Technologies/>

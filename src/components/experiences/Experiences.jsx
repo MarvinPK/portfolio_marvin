@@ -1,7 +1,12 @@
-export default function Experiences() {
-      return (
-        <section id="experiences" className="experiences-section">
-          <h1> Mes Experiences</h1>
-        </section>
-      );
-  }
+import SectionContainer from "../hoc/SectionContainer";
+
+const Experiences = () => {
+    return (
+      <SectionContainer sectionId="experiences" title="Experiences" bgColor="black">
+        <p>content</p>
+      </SectionContainer>
+
+    );
+}
+
+export default Experiences

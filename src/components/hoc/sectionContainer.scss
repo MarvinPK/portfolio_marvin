@@ -1,0 +1,9 @@
+.section .container .title::after {
+    content: '';
+    display: block;
+    width: 80%; /* Largeur de la bordure */
+    height: 2px; /* Épaisseur de la bordure */
+    background-color: #F5C24F; /* Couleur de la bordure */
+    left: 0; /* Commencer à gauche */
+    bottom: 0; /* Positionner au bas de l'élément */
+}

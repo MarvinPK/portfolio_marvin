@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionContainer from "../hoc/SectionContainer";
 
 const projects = [
   { title: 'Projet 1', description: 'Description du projet 1' },
@@ -8,9 +9,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects-section">
-      <h2>Mes Projets</h2>
-      <div className="projects-grid">
+      <SectionContainer sectionId="projects" title="Projects" bgColor="white">
+        <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <h3>{project.title}</h3>
@@ -18,7 +18,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </section>
+      </SectionContainer>
   );
 };
 
