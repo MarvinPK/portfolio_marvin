@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Centre les éléments horizontalement */
-    align-items: center;
     margin-top: 7%;
 }
 
@@ -19,6 +18,9 @@
     padding: 20px;
     transition: transform 0.2s;
     height: 150px;
+    min-width: 234px;
+    max-width: 350px;
+
 }
 
 .card .header{

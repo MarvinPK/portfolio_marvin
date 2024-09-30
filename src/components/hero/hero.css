@@ -87,6 +87,18 @@
   }
 }
 
+.rotate {
+  transform: rotate(-180deg);
+  transition-property: transform;
+  transition-duration: 2s;
+}
+
+.rotateInverse{
+  transform: rotate(0deg);
+  transition-property: transform;
+  transition-duration: 2s;
+}
+
 @media (max-width: 1200px) {
   .hero-section img {
     width: 220px;

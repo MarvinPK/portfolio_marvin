@@ -1,9 +1,9 @@
 import SectionContainer from "../hoc/SectionContainer";
 import "./technologies.scss"
 import {TECHNOLOGIES} from "./data.js"
+import Slider from "react-slick";
 
 const Technologies = () => {
-
    const crownGenerate = (level) => {
       let res = []
       for (let i = 0; i < level; i++) {
@@ -44,7 +44,6 @@ const Technologies = () => {
 
           })
         }
-          
         </div>
       </SectionContainer>
     );

@@ -1,6 +1,6 @@
 import "./sectionContainer.scss"
 
-const SectionContainer = ({title, sectionId, bgColor, classNameSection, classNameContainer, fullScreen=true, children}) => {
+const  SectionContainer = ({title, sectionId, bgColor, classNameSection, classNameContainer, fullScreen=true, children}) => {
     const sectionStyle = () => {
         return {
             height: fullScreen && "100vh",
