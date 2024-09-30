@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 8%;
+    margin-bottom: 3%;
 }
 
 .card .header .card-title{
@@ -37,7 +37,32 @@
 
 .card .level{
     font-size: 15px;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
 }
+
+.card .diagonal-text {
+    width: 135px;
+    position: absolute;
+    top: 30px;
+    left: -35px; /* Décale vers la gauche pour mieux centrer */
+    transform: rotate(-45deg); /* Angle diagonal */
+    background-color: #F2BB49; /* Couleur de fond */
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+
+// .card .comment{
+//     display: flex;
+//     justify-content: space-around;
+//     margin-bottom: 3%;
+//     font-size: 14px;
+//     background-color: red;
+// }
 
 .card .where{
     display: flex;

@@ -33,7 +33,7 @@ const Technologies = () => {
                 <div className="card-title">{techno?.name}</div>
               </div>
               <div className="level">{crownGenerate(techno?.level)}</div>
-              <div className="comment">{techno?.comment && techno?.comment}</div>
+              {techno?.comment && <div className="diagonal-text">{techno?.comment}</div>}              
               <div className="where">{techno?.where?.map((lieu)=>{
                 return (
                   <div className="whereElement" style={{color:lieu.color}}>{lieu.name}</div>
