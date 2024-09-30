@@ -1,15 +1,11 @@
-.App {
-  text-align: center;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.follower {
+  position: absolute; /* Positionnement absolu pour suivre le curseur */
+  width: 10px; /* Largeur de l'élément */
+  height: 10px; /* Hauteur de l'élément */
+  background-color: #F3BC4A; /* Couleur de l'élément */
+  border: solid black 1px;
+  border-radius: 50%; /* Arrondir l'élément pour en faire un cercle */
+  transition: transform 0.2s; /* Transition douce pour le mouvement */
 }
 

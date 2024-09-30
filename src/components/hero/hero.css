@@ -13,45 +13,45 @@
     border-radius: 100%;
     border: solid;
   }
+
   .hero-section h1 {
     font-size: 3rem;              /* Taille du titre */
-    margin-bottom: 20px;          /* Espace sous le titre */
     font-weight: normal;
   }
 
+  .title {
+    margin-bottom: 20px;          /* Espace sous le titre */
+  }
+
+  .hero-section h1 b{
+    border-bottom: #F3BE4C solid 4px;
+  }
+
  
-  .hero-section p {
-    font-size: 1.5rem;            /* Taille du texte descriptif */
-    margin-bottom: 40px;          /* Espace sous le paragraphe */
-  }
+.hero-section p {
+  font-size: 1.5rem;            /* Taille du texte descriptif */
+  margin-bottom: 40px;          /* Espace sous le paragraphe */
+}
   
-  .hero-section .btn {
-    padding: 15px 30px;           /* Taille du bouton */
-    background-color: #333;       /* Couleur de fond du bouton */
-    color: white;                 /* Couleur du texte */
-    text-decoration: none;        /* Retire la sous-ligne */
-    border-radius: 5px;           /* Coins arrondis */
-    transition: background-color 0.3s; /* Effet de transition pour le hover */
-  }
-  
-  .hero-section .btn:hover {
-    background-color: #555;       /* Changement de couleur lors du hover */
-  }
-  
-  .bouncy-title {
-    position: relative;
-    animation: fall-and-bounce 2s ease-in-out;
+.bouncy-title-one {
+  position: relative;
+  animation: fall-and-bounce-one 1.5s ease-in-out;
+}
+
+.bouncy-title-two {
+  position: relative;
+  animation: fall-and-bounce-two 3s ease-in-out;
 }
 
 /* Animation keyframes pour l'effet de chute et rebond */
-@keyframes fall-and-bounce {
+@keyframes fall-and-bounce-one {
     0% {
         top: -300px; /* Commence hors de l'écran */
     }
-    50% {
+    40% {
         top: 0; /* Arrive à sa position finale */
     }
-    70% {
+    60% {
         top: -60px; /* Rebond léger vers le haut */
     }
     80% {
@@ -65,23 +65,77 @@
     }
 }
 
-.triangle-border {
-  width: 0;
-  height: 0;
-  border-left: 110px solid transparent; /* Bord gauche */
-  border-right: 110px solid transparent; /* Bord droit */
-  border-bottom: 220px solid black; /* Bord inférieur (épaisseur totale) */
-  position: relative;
+/* Animation keyframes pour l'effet de chute et rebond */
+@keyframes fall-and-bounce-two {
+  0% {
+      top: -600px; /* Commence hors de l'écran */
+  }
+  30% {
+      top: 0; /* Arrive à sa position finale */
+  }
+  60% {
+      top: -60px; /* Rebond léger vers le haut */
+  }
+  80% {
+      top: 0; /* Revient à la position finale */
+  }
+  90% {
+      top: -30px; /* Rebond plus léger */
+  }
+  100% {
+      top: 0; /* Se stabilise à la position finale */
+  }
 }
 
-/* Triangle intérieur pour le fond jaune */
-.triangle-inner {
-  width: 0;
-  height: 0;
-  border-left: 100px solid transparent; /* Bord gauche */
-  border-right: 100px solid transparent; /* Bord droit */
-  border-bottom: 200px solid #E6AD42; /* Fond jaune du triangle */
-  position: absolute;
-  top: 13px; /* Ajuste la position du triangle jaune à l'intérieur */
-  left: -100px;
+@media (max-width: 1200px) {
+  .hero-section img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-section img {
+    width: 180px;
+  }
+  .hero-section h1 {
+    font-size: 2.5rem;              /* Taille du titre */
+  }
+}
+
+@media (max-width: 890px) {
+  .hero-section img {
+    width: 180px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;              /* Taille du titre */
+  }
+}
+
+@media (max-width: 610px) {
+  .hero-section {
+    display: flex;                /* Utilisation de flexbox pour centrer le contenu */
+    flex-direction: column;
+  }
+
+  .hero-section img {
+    width: 150px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.6rem; 
+  }
+
+  .title{
+    margin-top: 20%;
+  }
+
+  .hero-section img {
+    width: 250px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 545px) {
+
 }

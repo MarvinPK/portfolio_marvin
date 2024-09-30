@@ -4,7 +4,7 @@ nav {
     position: absolute;
     padding: 20px 0;         /* Espacement vertical pour la navbar */
     display: flex;                 /* Active le Flexbox */
-    justify-content: space-between; /* Espace entre les éléments de gauche et de droite */
+    justify-content: space-around; /* Espace entre les éléments de gauche et de droite */
     justify-content: center;
   }
 
@@ -20,12 +20,20 @@ nav {
     display: inline-block;    /* Affiche les items horizontalement */
     margin: 0 15px;           /* Espace entre chaque élément de la navbar */
   }
-
-
  
   nav ul li a {
     color: black;          /* Couleur du texte */
     text-decoration: none;    /* Enlève la sous-ligne des liens */
-    font-size: 18px;          /* Taille de police des liens */
+    font-size: 20px;          /* Taille de police des liens */
     transition: color 0.3s;   /* Transition pour effet de survol */
+  }
+
+  nav ul li a:hover {
+    font-weight: bold;
+  }
+
+  @media (max-width: 610px) {
+    nav ul li a {
+      font-size: 17px;          /* Taille de police des liens */
+    }
   }
