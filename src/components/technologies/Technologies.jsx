@@ -5,70 +5,14 @@ import {TECHNOLOGIES} from "./data.js"
 const Technologies = () => {
 
    const crownGenerate = (level) => {
-    //PIERRE
-    for (let i = 0; i < level; i++) {
-      <img src="assets/icons/crown-gold.svg"/>
-    }
-    for (let i = 0; i < 5-level; i++) {
-      <img src="assets/icons/crown-black.svg"/>
-    }
-
-    //MOI
-    /*  if(level == 1){
-        return (
-          <>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-black.svg"/>
-            <img src="assets/icons/crown-black.svg"/>
-            <img src="assets/icons/crown-black.svg"/>
-            <img src="assets/icons/crown-black.svg"/>
-          </>
-        )
-      }   
-      if(level == 2){
-          return (
-            <>
-              <img src="assets/icons/crown-gold.svg"/>
-              <img src="assets/icons/crown-gold.svg"/>
-              <img src="assets/icons/crown-black.svg"/>
-              <img src="assets/icons/crown-black.svg"/>
-              <img src="assets/icons/crown-black.svg"/>
-            </>
-          )           
+      let res = []
+      for (let i = 0; i < level; i++) {
+        res.push(<img src="assets/icons/crown-gold.svg"/>)
       }
-      if(level == 3){
-        return (
-          <>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-black.svg"/>
-            <img src="assets/icons/crown-black.svg"/>
-          </>
-        )           
+      for (let i = 0; i < 5-level; i++) {
+        res.push(<img src="assets/icons/crown-black.svg"/>)
       }
-      if(level == 4){
-        return (
-          <>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-black.svg"/>
-          </>
-        )           
-      }
-      if(level == 5){
-        return (
-          <>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-gold.svg"/>
-            <img src="assets/icons/crown-gold.svg"/>
-          </>
-        )           
-      }*/
+      return res
     }
 
     return (
@@ -103,7 +47,6 @@ const Technologies = () => {
           
         </div>
       </SectionContainer>
-
     );
 }
 
