@@ -3,32 +3,15 @@ import "./hero.css"
 
 const Hero = () => {
   
-  const pictureRef = useRef(null);
   const titleRef = useRef(null);
-
 
   useEffect(() => {
     const handleScroll = () => {
-      const pictureDiv = pictureRef.current;
-      const rect = pictureDiv.getBoundingClientRect();
-
       const titleDiv = titleRef.current;
-
-
-
-      // Si la div touche le haut de la fenêtre
-      if (rect.top <= 50) {
-        pictureDiv.classList.remove('rotateInverse');
-        pictureDiv.classList.add('rotate');
-        titleDiv.classList.remove('rotateInverse');
-        titleDiv.classList.add('rotate');
-      } else {
-        pictureDiv.classList.remove('rotate');
-        pictureDiv.classList.add('rotateInverse');
-        titleDiv.classList.remove('rotate');
-        titleDiv.classList.add('rotateInverse');
-
-      }
+      const rect = titleDiv.getBoundingClientRect();
+      if (rect.top <= 0) {
+        titleDiv.classList.add('bouncy-title-all-scrolling');
+      } 
     };
 
     // Ajouter l'écouteur d'événement de scroll
@@ -50,7 +33,7 @@ const Hero = () => {
           <p><h1> a <b>fullstack</b> and <b>smiling</b> 😊 developer.</h1></p>
         </div>
       </div>  
-      <div id="picture" ref={pictureRef}>
+      <div id="picture">
         <img src="assets/img/me.jpg"/>
       </div>
     </section>

@@ -43,6 +43,11 @@
   animation: fall-and-bounce-two 2s ease-in-out;
 }
 
+.bouncy-title-all-scrolling {
+  position: relative;
+  animation: fall-and-bounce-all-scrolling 5s ease-in-out;
+}
+
 /* Animation keyframes pour l'effet de chute et rebond */
 @keyframes fall-and-bounce-one {
     0% {
@@ -87,16 +92,26 @@
   }
 }
 
-.rotate {
-  transform: rotate(-180deg);
-  transition-property: transform;
-  transition-duration: 2s;
-}
-
-.rotateInverse{
-  transform: rotate(0deg);
-  transition-property: transform;
-  transition-duration: 2s;
+/* Animation keyframes pour l'effet de chute et rebond */
+@keyframes fall-and-bounce-all-scrolling {
+  0% {
+      top: 0px; /* Commencement */
+  }
+  5% {
+      top: 370px; /* Arrive à sa position finale */
+  }
+  10% {
+      top: 300px; /* Rebond léger vers le haut */
+  }
+  15% {
+      top: 370px; /* Revient à la position finale */
+  }
+  20% {
+      top: 350px; /* Rebond plus léger */
+  }
+  25% {
+      top: 370px; /* Se stabilise à la position finale */
+  }
 }
 
 @media (max-width: 1200px) {
