@@ -3,7 +3,7 @@ import SectionContainer from "../hoc/SectionContainer";
 
 const Contact = () => {
     return (
-      <SectionContainer fullScreen={false} sectionId="contact" title="Contact" bgColor="white">
+      <SectionContainer sectionId="contact" title="Contact" bgColor="white">
         <form>
           <input type="text" placeholder="Votre nom" />
           <input type="email" placeholder="Votre email" />
