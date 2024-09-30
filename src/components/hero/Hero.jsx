@@ -9,7 +9,7 @@ const Hero = () => {
           <p><h1>Hi, I am <b>Marvin</b></h1></p>
         </div>
         <div className='bouncy-title-two'>
-          <p><h1> a <b>fullstack</b> and <b>smiling</b> developpeur.</h1></p>
+          <p><h1> a <b>fullstack</b> and <b>smiling</b> 😊 developpeur.</h1></p>
         </div>
       </div>  
       <div id="picture">
