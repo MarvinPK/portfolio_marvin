@@ -20,8 +20,8 @@ function App() {
         onClick={()=>setIsUkLangage(!isUkLangage)}
 
         />
-      <Navbar />
-      <Hero />
+      <Navbar isUkLangage={isUkLangage}/>
+      <Hero isUkLangage={isUkLangage} />
       <Technologies/>
       <Projects />
       <Experiences/>

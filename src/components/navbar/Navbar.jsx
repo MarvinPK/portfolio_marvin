@@ -1,15 +1,16 @@
+import { getExperiencesWording, getHomeWording, getProjectsWording, getStackWording } from "../../data/wording_data";
 import "./navbar.scss"
 import React  from 'react';
 
 
-const Navbar = () => {
+const Navbar = ({isUkLangage}) => {
   return (
     <nav className="navbar">
         <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#technologies">Stacks</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#hero">{getHomeWording(isUkLangage)}</a></li>
+            <li><a href="#stacks">{getStackWording(isUkLangage)}</a></li>
+            <li><a href="#projects">{getProjectsWording(isUkLangage)}</a></li>
+            <li><a href="#experiences">{getExperiencesWording(isUkLangage)}</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marvin-prioux-khaye">

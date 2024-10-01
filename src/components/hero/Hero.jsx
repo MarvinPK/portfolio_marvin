@@ -1,16 +1,17 @@
 import React from 'react';
 import "./hero.css"
+import { getFirstPresentationSentenceHero, getSecondPresentationSentenceHero } from '../../data/wording_data';
 
-const Hero = () => {
+const Hero = ({isUkLangage}) => {
   
   return (
     <section id="hero" className="hero-section">
       <div className='title'>
        <div className='bouncy-title-one'>
-          <p><h1>Hi, I am <b>Marvin</b></h1></p>
+          {getFirstPresentationSentenceHero(isUkLangage)}
         </div>
         <div className='bouncy-title-two'>
-          <p><h1> a <b>fullstack</b> and <b>smiling</b> 😊 developer.</h1></p>
+          {getSecondPresentationSentenceHero(isUkLangage)}
         </div>
       </div>  
       <div id="picture">

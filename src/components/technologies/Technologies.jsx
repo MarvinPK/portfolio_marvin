@@ -1,6 +1,6 @@
 import SectionContainer from "../hoc/SectionContainer";
 import "./technologies.scss"
-import {TECHNOLOGIES} from "./data.js"
+import {TECHNOLOGIES} from "../../data/technologies_data.js"
 import Slider from "react-slick";
 
 const Technologies = () => {
@@ -16,7 +16,7 @@ const Technologies = () => {
     }
 
     return (
-      <SectionContainer sectionId="technologies" title="Technologies" bgColor="black">
+      <SectionContainer sectionId="stacks" title="Stacks" bgColor="black">
         <div className="cardContainer">
         {
           TECHNOLOGIES.map((techno) => {
