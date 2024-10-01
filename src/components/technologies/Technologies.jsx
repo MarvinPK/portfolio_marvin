@@ -1,9 +1,82 @@
 import SectionContainer from "../hoc/SectionContainer";
 import "./technologies.scss"
-import {TECHNOLOGIES} from "../../data/technologies_data.js"
-import Slider from "react-slick";
+import { getSchoolWording, getStacksWording } from "../../data/wording_data.js";
 
-const Technologies = () => {
+const Technologies = ({isUkLangage}) => {
+
+const colors = {
+  maif : "red",
+  school: "green",
+  personnel :"#F4BE4C",
+  canope :"#006167"
+ }
+
+const getStacks = () => {
+  return [
+    {
+      name:"ReactJS",
+      svgUrl:["assets/icons/react.svg", "assets/icons/webpack.svg"],
+      where:[
+        {name:"MAIF", color:colors.maif},
+        {name:"PERSONNEL", color:colors.personnel}
+      ],
+      level:4,
+      comment: ""
+    }, 
+    {
+      name:"Spring Boot",
+      svgUrl:["assets/icons/spring.svg"],
+      where:[
+        {name:"MAIF", color:colors.maif},
+        {name:"PERSONNEL", color:colors.personnel},
+        {name:getSchoolWording(isUkLangage).toUpperCase(), color:colors.school}
+      ],
+      level:4,
+      xp: "4 years"
+    },
+    {
+      name:"Java",
+      svgUrl:["assets/icons/java.svg"],
+      where:[
+        {name:"MAIF", color:colors.maif},
+        {name:"PERSONNEL", color:colors.personnel},
+        {name:getSchoolWording(isUkLangage).toUpperCase(), color:colors.school}
+      ],
+      level:4,
+      comment: ""
+    },
+    {
+      name:"CI/CD",
+      svgUrl:["assets/icons/jenkins.svg", "assets/icons/github.svg"], //github, jenkins
+      where:[
+        {name:"MAIF", color:colors.maif},
+        {name:"PERSONNEL", color:colors.personnel},
+        {name:getSchoolWording(isUkLangage).toUpperCase(), color:colors.school}
+      ],
+      level:3,
+      comment: ""
+    },
+    {
+      name:"Mobile",
+      svgUrl:["assets/icons/react-native.svg"],
+      where:[
+        {name:"PERSONNEL", color:colors.personnel}
+      ],
+      level:1,
+      comment: "Learning in progress"
+    }, 
+    {
+      name:"Symfony 3",
+      svgUrl:["assets/icons/php.svg","assets/icons/symfony.svg"],
+      where:[
+        {name :"CANOPE", color:colors.canope}
+      ],
+      level:2,
+      comment: ""
+    }
+  ]
+
+} 
    const crownGenerate = (level) => {
       let res = []
       for (let i = 0; i < level; i++) {
@@ -16,10 +89,10 @@ const Technologies = () => {
     }
 
     return (
-      <SectionContainer sectionId="stacks" title="Stacks" bgColor="black">
+      <SectionContainer sectionId="stacks" title={getStacksWording(isUkLangage)} bgColor="black">
         <div className="cardContainer">
         {
-          TECHNOLOGIES.map((techno) => {
+          getStacks().map((techno) => {
             return(
               <div class="card">
               <div className="header">

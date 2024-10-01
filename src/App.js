@@ -22,11 +22,11 @@ function App() {
         />
       <Navbar isUkLangage={isUkLangage}/>
       <Hero isUkLangage={isUkLangage} />
-      <Technologies/>
-      <Projects />
-      <Experiences/>
-      <Contact /> 
-      <Footer />
+      <Technologies isUkLangage={isUkLangage}/>
+      <Projects isUkLangage={isUkLangage}/>
+      <Experiences isUkLangage={isUkLangage}/>
+      <Contact isUkLangage={isUkLangage}/> 
+      <Footer isUkLangage={isUkLangage}/>
     </div>
   );
 }

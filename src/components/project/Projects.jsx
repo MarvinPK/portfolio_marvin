@@ -1,10 +1,11 @@
 import React from 'react';
 import SectionContainer from "../hoc/SectionContainer";
 import "./projects.scss"
+import { getProjectsWording } from '../../data/wording_data';
 
-const Projects = () => {
+const Projects = ({isUkLangage}) => {
   return (
-      <SectionContainer sectionId="projects" title="Projects" bgColor="white" fullScreen={false}>
+      <SectionContainer sectionId="projects" title={getProjectsWording(isUkLangage)} bgColor="white" fullScreen={false}>
       <div className='projects'>
         <div>Projects are comming soon</div>
       </div>

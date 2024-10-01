@@ -1,11 +1,11 @@
-//NAVBAR
+//NAVBAR && TITLE
 export const getHomeWording = (isUkLangage) => {
     if(isUkLangage){
         return "Home"
     }
     return "Accueil"
 }
-export const getStackWording = (isUkLangage) => {
+export const getStacksWording = (isUkLangage) => {
     if(isUkLangage){
         return "Stacks"
     }
@@ -38,4 +38,12 @@ export const getSecondPresentationSentenceHero = (isUkLangage) => {
         return <p><h1> a <b>fullstack</b> and <b>smiling</b> 😊 developer.</h1></p>
     }
     return <p><h1> je suis un developpeur <b> souriant </b> 😊 et <b>fullstack</b> </h1></p>
+}
+
+//STACKS
+export const getSchoolWording = (isUkLangage) => {
+    if(isUkLangage){
+        return "School"
+    }
+    return "Ecole"
 }

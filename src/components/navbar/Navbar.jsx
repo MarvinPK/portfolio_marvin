@@ -1,4 +1,4 @@
-import { getExperiencesWording, getHomeWording, getProjectsWording, getStackWording } from "../../data/wording_data";
+import { getExperiencesWording, getHomeWording, getProjectsWording, getStacksWording } from "../../data/wording_data";
 import "./navbar.scss"
 import React  from 'react';
 
@@ -8,7 +8,7 @@ const Navbar = ({isUkLangage}) => {
     <nav className="navbar">
         <ul>
             <li><a href="#hero">{getHomeWording(isUkLangage)}</a></li>
-            <li><a href="#stacks">{getStackWording(isUkLangage)}</a></li>
+            <li><a href="#stacks">{getStacksWording(isUkLangage)}</a></li>
             <li><a href="#projects">{getProjectsWording(isUkLangage)}</a></li>
             <li><a href="#experiences">{getExperiencesWording(isUkLangage)}</a></li>
             <li><a href="#contact">Contact</a></li>
