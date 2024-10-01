@@ -13,7 +13,7 @@ const Navbar = () => {
             <li><a href="#contact">Contact</a></li>
             <li>
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marvin-prioux-khaye">
-                    <img  id = "icon-linkedin" class="img-icon"  src="/assets/icons/linkedin-64.svg"  alt="Icon LinkedIN" />
+                    <img  id = "icon-linkedin" className="img-icon"  src="/assets/icons/linkedin-64.svg"  alt="Icon LinkedIN" />
                 </a>
             </li>
         </ul>
