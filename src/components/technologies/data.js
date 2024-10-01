@@ -8,7 +8,7 @@ const colors = {
 export const TECHNOLOGIES = [
     {
       name:"ReactJS",
-      svgUrl:["assets/icons/react.svg"],
+      svgUrl:["assets/icons/react.svg", "assets/icons/webpack.svg"],
       where:[
         {name:"MAIF", color:colors.maif},
         {name:"PERSONNEL", color:colors.personnel}

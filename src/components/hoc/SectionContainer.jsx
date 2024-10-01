@@ -3,12 +3,13 @@ import "./sectionContainer.scss"
 const  SectionContainer = ({title, sectionId, bgColor, classNameSection, classNameContainer, fullScreen=true, children}) => {
     const sectionStyle = () => {
         return {
-            height: fullScreen && "100vh",
+            minHeight: fullScreen && "100vh",
+            maxHeight: "auto",
             display: "flex",
             padding: "0 20px",
             backgroundColor: bgColor,
             alignItems: "flex-start",
-            color: bgColor == "white" ? "black" : "white"
+            color: bgColor === "white" ? "black" : "white",
         }
     }
 
