@@ -1,5 +1,5 @@
 import React from 'react';
-import "./hero.css"
+import "./hero.scss"
 import { getFirstPresentationSentenceHero, getSecondPresentationSentenceHero } from '../../data/wording_data';
 
 const Hero = ({isUkLangage}) => {

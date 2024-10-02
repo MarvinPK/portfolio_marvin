@@ -4,6 +4,15 @@
     padding: 10px 0;
 }
 
+.card {
+    color: black;
+    border-bottom: solid 4px #F5BD4C;
+    border-right: solid 4px #F5BD4C;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 890px) {
     .flagLanguage{
         left: 95%;

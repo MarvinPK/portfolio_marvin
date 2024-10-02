@@ -1,6 +1,5 @@
 import React from 'react';
 import SectionContainer from "../hoc/SectionContainer";
-import "./projects.scss"
 import { getProjectsWording } from '../../data/wording_data';
 
 const Projects = ({isUkLangage}) => {

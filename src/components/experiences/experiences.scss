@@ -1,0 +1,69 @@
+.experienceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 5%;
+    .line {
+        width: 3px;
+        height: 100%;
+        background-color: #EFB746;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .circle-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        gap:100px;
+        .circle-card-wrapper {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin: 20px 0;
+        }
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card {
+        width: 200px;
+        height: 100px;
+        padding: 10px;
+        margin: 10px 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .card:hover{
+        width: 400px;
+        height: 200px;
+        margin: 20px 20px;
+        transition: width 1s, height 1s, color 1s, background-color 1s, border 1s;
+        border: solid 3px white;
+        background-color: black;
+        border: solid 4px #F5BD4C;
+        color: white;
+    }
+    /* Positionne les cartes alternativement à gauche et à droite */
+    .circle-card-wrapper:nth-child(odd) .card {
+        left: 120%;
+    }
+
+    .circle-card-wrapper:nth-child(even) .card {
+        right: 120%;
+    }
+}
+

@@ -5,9 +5,7 @@ const  SectionContainer = ({title, sectionId, bgColor, classNameSection, classNa
         return {
             minHeight: fullScreen && "100vh",
             maxHeight: "auto",
-            display: "flex",
             backgroundColor: bgColor,
-            alignItems: "flex-start",
             color: bgColor === "white" ? "black" : "white",
         }
     }
@@ -15,7 +13,8 @@ const  SectionContainer = ({title, sectionId, bgColor, classNameSection, classNa
     const containerStyle = () => {
         return {
             marginLeft: "10%",
-            marginRight: "10%"
+            marginRight: "10%",
+            padding: "1% 0%"
         }
     }
        

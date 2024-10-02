@@ -6,7 +6,7 @@ import Projects from './components/project/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Experiences from './components/experiences/Experiences';
-import "./App.css"
+import "./App.scss"
 
 function App() {
 

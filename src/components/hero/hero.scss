@@ -1,0 +1,135 @@
+.hero-section {
+    height: 100vh;
+    display: flex;
+    padding: 0 20px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      width: 280px;
+      border-radius: 100%;
+      border: solid;
+    }
+
+    .title {
+      margin-bottom: 20px; 
+    }
+
+    h1 {
+      font-size: 3rem; 
+      font-weight: normal;
+      b{
+        border-bottom: #F3BE4C solid 4px;
+      }
+    }
+
+    p {
+      font-size: 1.5rem; 
+      margin-bottom: 40px;
+    }
+
+    .bouncy-title-one {
+      position: relative;
+      animation: fall-and-bounce-one 2s ease-in-out;
+    }
+    
+    .bouncy-title-two {
+      position: relative;
+      animation: fall-and-bounce-two 2s ease-in-out;
+    }
+
+  }
+
+@media (max-width: 1200px) {
+  .hero-section img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-section {
+    img {
+      width: 180px;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+}
+
+@media (max-width: 890px) {
+  .hero-section{
+    img {
+      width: 180px;
+    }  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .hero-section {
+    padding-top: 50px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 150px;
+    }
+    h1 {
+      font-size: 1.6rem; 
+    }
+    img {
+      width: 250px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+/* Animation keyframes pour l'effet de chute et rebond */
+@keyframes fall-and-bounce-one {
+  0% {
+      top: -600px; /* Commence hors de l'écran */
+  }
+  60% {
+      top: 0; /* Arrive à sa position finale */
+  }
+  70% {
+      top: -60px; /* Rebond léger vers le haut */
+  }
+  80% {
+      top: 0; /* Revient à la position finale */
+  }
+  90% {
+      top: -30px; /* Rebond plus léger */
+  }
+  100% {
+      top: 0; /* Se stabilise à la position finale */
+  }
+}
+
+/* Animation keyframes pour l'effet de chute et rebond */
+@keyframes fall-and-bounce-two {
+0% {
+    top: -600px; /* Commence hors de l'écran */
+}
+30% {
+    top: 0; /* Arrive à sa position finale */
+}
+60% {
+    top: -60px; /* Rebond léger vers le haut */
+}
+80% {
+    top: 0; /* Revient à la position finale */
+}
+90% {
+    top: -30px; /* Rebond plus léger */
+}
+100% {
+    top: 0; /* Se stabilise à la position finale */
+}
+}
