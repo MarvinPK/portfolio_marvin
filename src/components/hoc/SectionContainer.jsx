@@ -6,7 +6,6 @@ const  SectionContainer = ({title, sectionId, bgColor, classNameSection, classNa
             minHeight: fullScreen && "100vh",
             maxHeight: "auto",
             display: "flex",
-            padding: "0 20px",
             backgroundColor: bgColor,
             alignItems: "flex-start",
             color: bgColor === "white" ? "black" : "white",

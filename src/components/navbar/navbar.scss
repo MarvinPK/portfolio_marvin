@@ -33,6 +33,9 @@ nav {
   }
 
   @media (max-width: 610px) {
+    nav ul li {
+      margin: 0 5px;
+    }
     nav ul li a {
       font-size: 17px;          /* Taille de police des liens */
     }

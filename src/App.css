@@ -3,3 +3,16 @@
     left: 97%;
     padding: 10px 0;
 }
+
+@media (max-width: 890px) {
+    .flagLanguage{
+        left: 95%;
+    }
+}
+
+@media (max-width: 610px) {
+    .flagLanguage{
+        padding: 2px 0;
+        left: 50%;
+    }
+}
