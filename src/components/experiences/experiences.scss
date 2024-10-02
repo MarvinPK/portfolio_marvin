@@ -39,23 +39,33 @@
     }
 
     .card {
-        width: 200px;
+        width: 250px;
         height: 100px;
         padding: 10px;
         margin: 10px 10px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+
+        .corner{
+            position: relative;
+            left: 40%;
+            right: 0;
+        }
     }
     .card:hover{
         width: 400px;
         height: 200px;
         margin: 20px 20px;
-        transition: width 1s, height 1s, color 1s, background-color 1s, border 1s;
+        transition: width 1.5s, height 1.5s, color 1.5s, background-color 1.5s;
         border: solid 3px white;
         background-color: black;
-        border: solid 4px #F5BD4C;
+        border: solid 2px #F5BD4C;
         color: white;
+        .where svg{
+            transition: fill 1.5s;
+            fill:white
+        }
     }
     /* Positionne les cartes alternativement à gauche et à droite */
     .circle-card-wrapper:nth-child(odd) .card {
@@ -64,6 +74,19 @@
 
     .circle-card-wrapper:nth-child(even) .card {
         right: 120%;
+    }
+}
+
+@media (max-width: 960px) {
+    .card:hover{
+        width: 200px;
+        height: 100px;
+        margin: 10px 10px;
+        transition:none;
+        color: black;
+        border-bottom: solid 4px #F5BD4C;
+        border-right: solid 4px #F5BD4C;
+        background: white;
     }
 }
 
